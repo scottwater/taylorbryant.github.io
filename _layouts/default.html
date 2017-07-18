@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>this is a test</title>
-    <link href="/assets/css/style.css?v=dd7d4a8628eafa02948945283a35d46b07e5d2fa" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container markdown-body my-5">
+{% include header.html %}
       <ul>
         {% for post in site.posts %}
           <li>
@@ -15,8 +6,4 @@
           </li>
         {% endfor %}
       </ul>
-    </div>
-    <script src="/assets/javascript/anchor-js/anchor.min.js"></script>
-    <script>anchors.add();</script>
-  </body>
-</html>
+{% include footer.html %}
