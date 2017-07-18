@@ -2,9 +2,9 @@
 title: this is a test
 ---
 
-![Step 1](/img/create-an-alias/step-1.png)
+![Step 1](assets/img/create-an-alias/step-1.png)
 
-![Step 2](/img/create-an-alias/step-1.png)
+![Step 2](assets/img/create-an-alias/step-2.png)
 
 
 # <a name="top"></a>Markdown Test Page
