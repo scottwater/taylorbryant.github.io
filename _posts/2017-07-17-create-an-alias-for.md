@@ -32,3 +32,5 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 - Close and reopen **Terminal** (or your chosen emulator) to use your new alias. Test out your new alias by typing the alias name and pressing **Enter**.
 
 ![Step 6](assets/img/create-an-alias/step-6.png)
+
+You're all set!
