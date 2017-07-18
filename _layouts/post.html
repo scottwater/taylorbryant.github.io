@@ -1,5 +1,4 @@
 {% include header.html %}
-	<div class="back-arrow"><a href="taylorbryant.blog">↖</a>️</div>
-	<p class="post-date">{{ page.date | date_to_long_string }}</p>
+	<p class="post-date"><a href="taylorbryant.blog">↖</a>️ {{ page.date | date_to_long_string }}</p>
     {{ content }}
 {% include footer-post.html %}
