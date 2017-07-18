@@ -6,17 +6,34 @@ title: this is a test
 
 Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create an alias.
 
-# Follow these simple steps
-
-1. Open your terminal emulator of choice. I use the macOS default **Terminal.app**.
+### Follow these simple steps
+- Open your terminal emulator of choice. I use the macOS default **Terminal.app**.
 
 ![Step 1](assets/img/create-an-alias/step-1.png)
 
-2. Type in the following command: `bash sudo nano .bash_profile` and press **Enter**.
+- Type in the following command: `bash sudo nano .bash_profile` then press **Enter**.
 
 ![Step 2](assets/img/create-an-alias/step-2.png)
 
-3. 
+-
+
+![Step 3](assets/img/create-an-alias/step-3.png)
+
+-
+
+![Step 4](assets/img/create-an-alias/step-4.png)
+
+-
+
+![Step 5](assets/img/create-an-alias/step-5.png)
+
+-
+
+![Step 6](assets/img/create-an-alias/step-6.png)
+
+-
+
+![Step 7](assets/img/create-an-alais/step-7.png)
 
 
 # <a name="top"></a>Markdown Test Page
