@@ -1,5 +1,7 @@
 ---
-title: this is a test
+title: Create an alias for a Terminal command
+permalink: /create-an-alias
+layout: post
 ---
 
 # <a name="top"></a>Create an alias for a Terminal command
@@ -30,3 +32,5 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 - Close and reopen **Terminal** (or your chosen emulator) to use your new alias. Test out your new alias by typing the alias name and pressing **Enter**.
 
 ![Step 6](assets/img/create-an-alias/step-6.png)
+
+[[Back to Top]](#top)
