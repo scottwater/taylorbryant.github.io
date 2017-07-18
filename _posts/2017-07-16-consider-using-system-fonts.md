@@ -12,7 +12,9 @@ Next time you find yourself reaching for Google Fonts or Typekit, stop for a mom
 Here's an approach I borrowed from <a href="https://medium.com">Medium</a>. It provides support for versions of Mac OS X, Windows, Android, and Ubuntu.
 
 ```css
-font-family: -apple-system, BlinkMacSystemFont,
-	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    	"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
 ```
