@@ -11,11 +11,11 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 1](assets/img/create-an-alias/step-1.png)
 
-- Type in the following command: `bash sudo nano .bash_profile` then press **Enter**. This command will open **.bash_profile** in the Nano text editor. You may be prompted for your password.
+- Type in the command `bash sudo nano .bash_profile` then press **Enter**. This command will open **.bash_profile** in the Nano text editor. You may be prompted for your password.
 
 ![Step 2](assets/img/create-an-alias/step-2.png)
 
-- Once **.bash_profile** is open, type in `alias` followed by the alias name you would like to use and the command you would ike the alias to execute. Follow the format in the screenshot below.
+- Once **.bash_profile** is open, type in `alias` followed by the alias name you would like to use, see **youraliasname** in the example below. Now, add an **=** sign and place the desired command between two **'** characters, similar to the example below.
 
 ![Step 3](assets/img/create-an-alias/step-3.png)
 
