@@ -25,12 +25,12 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 4](assets/img/create-an-alias/step-4.png)
 
-- Nano will ask you to confirm the file name to write the changes to. Press **Enter** overwrite the previous version of **.bash_profile**.
+- Nano will ask you to confirm the file name to write the changes to. Press **Enter** to overwrite the previous version of **.bash_profile**.
 
 ![Step 5](assets/img/create-an-alias/step-5.png)
 
 - Close and reopen **Terminal** (or your chosen emulator) to use your new alias. Test out your new alias by typing the alias name and pressing **Enter**.
 
-![Step 6](assets/img/create-an-alias/step-6.png)
+![Step 6](assets/img/create-an-alias/step-7.png)
 
 You're all set!
