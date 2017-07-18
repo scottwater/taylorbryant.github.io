@@ -2,6 +2,8 @@
 title: this is a test
 ---
 
+# Test
+
 ![Step 1](assets/img/create-an-alias/step-1.png)
 
 ![Step 2](assets/img/create-an-alias/step-2.png)
