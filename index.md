@@ -2,7 +2,7 @@
 title: this is a test
 ---
 
-# <a name="top"></a>Create an alias for Terminal commands
+# <a name="top"></a>Create an alias for a Terminal command
 
 Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create an alias.
 
@@ -11,11 +11,11 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 1](assets/img/create-an-alias/step-1.png)
 
-- Type in the following command: `bash sudo nano .bash_profile` then press **Enter**.
+- Type in the following command: `bash sudo nano .bash_profile` then press **Enter**. This command will open **.bash_profile** in the Nano text editor. You may be prompted for your password.
 
 ![Step 2](assets/img/create-an-alias/step-2.png)
 
--
+- Once **.bash_profile** is open, type in `alias` followed by the alias name you would like to use and the command you would ike the alias to execute. Follow the format in the screenshot below.
 
 ![Step 3](assets/img/create-an-alias/step-3.png)
 
