@@ -4,9 +4,11 @@ permalink: consider-using-system-fonts
 layout: post
 ---
 
+# <a name="top"></a>Consider using system fonts
+
 Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts. Defaulting to system fonts provides a performance boost and provides a comfortable, consistent experience for the end user. Loading a system font instead of a web font will save you at least one HTTP request and the headache of finding a nice looking font for your project.
 
-## Medium's approach
+### Medium's approach
 Here's an approach I borrowed from <a href="https://medium.com">Medium</a>. It provides support for versions of Mac OS X, Windows, Android, and Ubuntu.
 
 ```
