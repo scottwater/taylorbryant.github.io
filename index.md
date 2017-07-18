@@ -15,7 +15,7 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 2](assets/img/create-an-alias/step-2.png)
 
-- Once **.bash_profile** is open, type in `alias` followed by the alias name you would like to use, see **youraliasname** in the example below. Now, add an `=` sign and place the desired command between two `'` characters, similar to the example below. In the example, I created an alias called `youraliasname` and assigned it `cd cats/tabbies`.
+- Once **.bash_profile** is open, type in `alias` followed by the alias name you would like to use. Now, add an `=` sign and place the desired command between two `'` characters. In the example below, I created an alias called `youraliasname` and assigned it `cd cats/tabbies`.
 
 ![Step 3](assets/img/create-an-alias/step-3.png)
 
@@ -27,14 +27,9 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 5](assets/img/create-an-alias/step-5.png)
 
-- Close and reopen **Terminal.app** to use your new alias. 
+- Close and reopen **Terminal.app** to use your new alias. Test out your new alias by typing the alias name and pressing **Enter**.
 
 ![Step 6](assets/img/create-an-alias/step-6.png)
-
--
-
-![Step 7](assets/img/create-an-alais/step-7.png)
-
 
 # <a name="top"></a>Markdown Test Page
 
