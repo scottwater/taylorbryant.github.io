@@ -1,3 +1,7 @@
+---
+layout: page 
+---
+
 # <a name="top"></a>Markdown Test Page
 
 * [Headings](#Headings)
