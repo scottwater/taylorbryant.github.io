@@ -1,16 +1,8 @@
 {% include header.html %}
-      <img class="avatar" src="/assets/img/cat-black.svg" alt="Black & white illustration of a cat">
-      <h2>Recent Posts</h2>
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+  <h1 class="self-introduction">Hi, my name is <span class="blue monospace">Taylor Bryant</span>. I am a front-end developer from Memphis, TN.</h1>
 
-      <h2>Recent Projects</h2>
-      <ul>
-        <li><a href="http://front-end.tools">front-end.tools</a></li>
-      </ul>
+  <h2>Quick Reads</h2>
+    {% for post in site.posts %}
+      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+    {% endfor %}
 {% include footer.html %}

@@ -1,4 +1,10 @@
 {% include header.html %}
-	<p class="post-date"><a href="/">↖</a>️ {{ page.date | date_to_long_string }}</p>
-    {{ content }}
+  <header>
+    <p class="post__date">{{ page.date | date_to_long_string }}</p>
+    <h1 class="post__title"><a name="top"></a>{{ page.title }}</h1>
+    <p class="post__author"><em>by</em> <a href="http://taylorbryant.blog">Taylor Bryant</a></p>
+  </header>
+
+  {{ content }}
+
 {% include footer-post.html %}

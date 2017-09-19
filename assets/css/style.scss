@@ -1,33 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-.container {
-	max-width: 720px;
-	width: 100%;
-	padding: 1rem;
-}
-
-.markdown-body {
-	font-size: 18px;
-}
-
-.avatar {
-	margin-bottom: 1.5rem;
-	width: 100px;
-}
-
-.post-date {
-	color: #6a737d;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-}
-
-footer {
-	color: #6a737d;
-	display: flex;
-	font-size: 0.75rem;
-	justify-content: space-between;
-	margin-top: 3rem;
-}
+// Imports
+@import "normalize";
+@import "dracula";
+@import "base";

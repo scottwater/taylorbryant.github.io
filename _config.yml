@@ -1,0 +1,8 @@
+title: Taylor Bryant - Front-end Developer
+description: A blog about web dev tools, productivity tips, and more.
+
+highlighter: rogue
+
+sass:
+  sass_dir: /assets/css/
+  style: compressed

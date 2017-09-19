@@ -1,10 +1,8 @@
 ---
 title: Create an alias for a Terminal command
-permalink: /create-an-alias
+permalink: /create-an-alias-for-a-terminal-command
 layout: post
 ---
-
-# <a name="top"></a>Create an alias for a Terminal command
 
 Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create an alias.
 
