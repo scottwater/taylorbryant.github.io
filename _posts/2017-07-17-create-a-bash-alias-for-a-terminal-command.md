@@ -4,7 +4,7 @@ permalink: /create-a-bash-alias-for-a-terminal-command
 layout: post
 ---
 
-Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create an alias.
+Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create a Bash alias.
 
 ### Follow these simple steps
 - Open your terminal emulator of choice. I use the macOS default **Terminal**.
