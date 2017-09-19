@@ -1,6 +1,6 @@
 ---
-title: Create an alias for a Terminal command
-permalink: /create-an-alias-for-a-terminal-command
+title: Create a Bash alias for a Terminal command
+permalink: /create-a-bash-alias-for-a-terminal-command
 layout: post
 ---
 
