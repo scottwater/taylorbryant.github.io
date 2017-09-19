@@ -31,4 +31,4 @@ Do you find yourself frequently typing out the same command in Terminal? One sim
 
 ![Step 6](assets/img/create-an-alias/step-7.png)
 
-You're all set!
+You're all set! 🚀
