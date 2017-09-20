@@ -618,6 +618,7 @@ pre {
   overflow: auto;
   font-size: 1em;
   line-height: 1.5;
+  white-space: pre;
   word-wrap: normal;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
@@ -654,6 +655,7 @@ strong {
 .container {
   margin: 80px auto 40px;
   max-width: 750px;
+  overflow: hidden;
   padding: 0 20px;
   width: 100%;
 }
