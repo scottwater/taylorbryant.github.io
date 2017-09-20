@@ -3,6 +3,11 @@ description: A blog about web dev tools, productivity tips, and more.
 
 highlighter: rouge
 
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
 sass:
   sass_dir: /assets/css/
   style: compressed
