@@ -1,7 +1,6 @@
 ---
 title:  "Consider using system fonts"
 permalink: consider-using-system-fonts
-layout: post
 status: published
 ---
 

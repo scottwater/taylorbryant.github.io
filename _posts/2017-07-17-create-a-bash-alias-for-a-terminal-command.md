@@ -1,7 +1,6 @@
 ---
 title: Create a Bash alias for a Terminal command
 permalink: /create-a-bash-alias-for-a-terminal-command
-layout: post
 status: published
 ---
 
