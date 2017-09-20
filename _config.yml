@@ -18,5 +18,4 @@ compress_html:
   endings:   all
 
 sass:
-  sass_dir: /assets/_sass
   style: compressed
