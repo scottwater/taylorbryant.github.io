@@ -12,5 +12,3 @@ I made a nifty little bookmarklet that runs the current page through CSS Stats u
 ```
 javascript:location.href='http://cssstats.com/stats?url='+window.location.href+'&ua=Browser Default'
 ```
-
-![Step 3](assets/img/css-stats/example.png)
