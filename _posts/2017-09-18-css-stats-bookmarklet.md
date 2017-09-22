@@ -1,5 +1,5 @@
 ---
-title: CSS Stats Bookmarklet
+title: CSS Stats bookmarklet
 permalink: /css-stats-bookmarklet
 status: published
 ---
