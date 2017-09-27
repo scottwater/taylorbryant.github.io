@@ -1,3 +1,3 @@
 ## taylorbryant.blog
 
-A personal blog for Taylor Bryant
+Personal blog of Taylor Bryant
