@@ -651,6 +651,10 @@ strong {
   text-decoration: none !important;
 }
 
+.visible-area {
+   overflow: hidden;
+}
+
 .container {
   margin: 80px auto 40px;
   max-width: 750px;
