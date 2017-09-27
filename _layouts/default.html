@@ -8,12 +8,12 @@ layout: compress
   <h2>Quick Reads</h2>
   {% for post in site.posts %}
     {% if post.status == "published" %}
-      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+      <h3 class="list-item"><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {% endif %}
   {% endfor %}
 
   <h2>Fun</h2>
   {% for fun-project in site.data.fun-projects %}
-    <a href="{{ fun-project.link }}"><h3>{{ fun-project.name }}</h3></a>
+    <h3 class="list-item"><a href="{{ fun-project.link }}">{{ fun-project.name }}</a></h3>
   {% endfor %}
 {% include footer.html %}

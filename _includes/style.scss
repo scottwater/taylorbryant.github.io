@@ -652,7 +652,7 @@ strong {
 }
 
 .visible-area {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -664,35 +664,13 @@ strong {
 }
 
 // Home
-.avatar {
-  margin-bottom: 20px;
-  border-radius: 50%;
-}
-
 .self-introduction {
   margin: 0;
   line-height: 1.5;
 }
 
-.card {
-  padding: 40px;
-  background-color: #282a36;
-}
-
-.card a {
-  color: #fff;
-}
-
-.card a:hover {
-  text-decoration: none;
-}
-
-.card h3 {
-  margin: 0;
-}
-
-.card + .card {
-  margin-top: 20px;
+.list-item {
+  margin: 20px 0;
 }
 
 // Posts
