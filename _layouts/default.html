@@ -4,18 +4,24 @@ layout: compress
 
 {% include header.html %}
   <header class="header--home">
+    <ul class="navigation">
+      <li class="navigation__item">Blog</li>
+      <li class="navigation__item">About</li>
+      <li class="navigation__item">Contact</li>
+    </ul>
+    
     <h1 class="self-introduction">Hi, my name is Taylor Bryant</span>.</h1>
   </header>
 
   <h2>Quick Reads</h2>
   {% for post in site.posts %}
     {% if post.status == "published" %}
-      <h3 class="list-item"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="list__item"><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {% endif %}
   {% endfor %}
 
   <h2>Fun</h2>
   {% for fun-project in site.data.fun-projects %}
-    <h3 class="list-item"><a href="{{ fun-project.link }}">{{ fun-project.name }}</a></h3>
+    <h3 class="list__item"><a href="{{ fun-project.link }}">{{ fun-project.name }}</a></h3>
   {% endfor %}
 {% include footer.html %}
