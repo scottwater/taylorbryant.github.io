@@ -708,6 +708,10 @@ strong {
   text-decoration: none;
 }
 
+.navigation li {
+  margin-bottom: 0;
+}
+
 .navigation li + li {
   margin-left: 20px;
 }
