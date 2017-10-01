@@ -673,7 +673,7 @@ strong {
 .header--home {
   background-color: #306ffd;
   background-image: linear-gradient(60deg,#306efe,#003ab7);
-  padding: 60px 0 120px;
+  padding: 40px 0 120px;
   position: relative;
 }
 
@@ -681,35 +681,40 @@ strong {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #282a36;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
-  font-size: 14px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   letter-spacing: 2px;
   list-style: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
 .navigation__item {
+  background-color: #282a36;
+  color: white;
   margin: 0;
-  padding: 0;
+  padding: 10px 15px;
 }
 
-.navigation__item + .navigation__item {
+.navigation__item:hover {
+  background-color: white;
+  color: #282a36;
+  text-decoration: none;
+}
+
+.navigation li + li {
   margin-left: 20px;
 }
 
 .self-introduction {
   color: white;
-  margin: 0 auto;
+  margin: 40px auto 0;
   max-width: 75%;
   line-height: 1.5;
   text-align: center;
