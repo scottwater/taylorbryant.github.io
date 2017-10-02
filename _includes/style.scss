@@ -562,9 +562,9 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  line-height: 1.1;
   margin-top: 40px;
   margin-bottom: 10px;
-  line-height: 1.1;
 }
 
 h1 {
@@ -596,8 +596,8 @@ p, ul, ol {
 }
 
 ul, ol {
-  padding: 0 0 0 40px;
   margin: 0 0 20px 0;
+  padding: 0 0 0 40px;
 }
 
 ol ol, ul ol {
@@ -619,14 +619,14 @@ input, select, textarea, button {
 }
 
 pre {
-  margin: 40px -36vw;
-  padding: 40px 36vw;
-  overflow: auto;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 1em;
   line-height: 1.5;
+  margin: 40px -36vw;
+  overflow: auto;
+  padding: 40px 36vw;
   white-space: pre;
   word-wrap: normal;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 
 pre code {
@@ -637,12 +637,12 @@ pre code {
 }
 
 code, tt {
-  padding: 5px;
-  margin: 0;
-  font-size: 85%;
   background-color: rgba(27, 31, 35, .05);
   border-radius: 3px;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 85%;
+  margin: 0;
+  padding: 5px;
 }
 
 small {
@@ -695,33 +695,57 @@ strong {
   text-transform: uppercase;
 }
 
-.navigation__item {
+@media only screen and (max-width: 450px) {
+  .navigation {
+    font-size: 14px;
+  }
+}
+
+.navigation__link {
   background-color: #282a36;
   color: white;
-  margin: 0;
+  display: block;
   padding: 10px 15px;
 }
 
-.navigation__item:hover {
+.navigation__link:hover {
   background-color: white;
   color: #282a36;
   text-decoration: none;
 }
 
-.navigation li {
+.navigation__item {
   margin-bottom: 0;
 }
 
-.navigation li + li {
+.navigation__item + .navigation__item {
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .navigation__item + .navigation__item {
+    margin-left: 5px;
+  }
 }
 
 .self-introduction {
   color: white;
+  line-height: 1.5;
   margin: 40px auto 0;
   max-width: 75%;
-  line-height: 1.5;
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .self-introduction {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .self-introduction {
+    font-size: 2em;
+  }
 }
 
 .header__bottom {
@@ -759,7 +783,7 @@ strong {
 }
 
 /* Footer */
-footer {
+.footer {
   color: #6a737d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,6 +795,6 @@ footer {
   margin-top: 40px;
 }
 
-footer p {
+.footer__copyright {
   margin-bottom: 0;
 }
