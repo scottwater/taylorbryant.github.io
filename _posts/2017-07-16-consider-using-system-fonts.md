@@ -2,6 +2,7 @@
 title:  "Consider using system fonts"
 permalink: consider-using-system-fonts
 status: published
+description: Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts.
 ---
 
 Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts. Defaulting to system fonts provides a performance boost and provides a comfortable, consistent experience for the end user. Loading a system font instead of a web font will save you at least one HTTP request and the headache of finding a nice looking font for your project. Try it out!

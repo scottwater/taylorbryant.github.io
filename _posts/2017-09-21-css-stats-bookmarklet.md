@@ -2,6 +2,7 @@
 title: CSS Stats bookmarklet
 permalink: /css-stats-bookmarklet
 status: published
+description: CSS Stats is a useful tool for getting a bird's eye view of the state of your website's CSS. 
 ---
 
 <a href="http://cssstats.com">CSS Stats</a> is a useful tool for getting a bird's eye view of the state of your website's CSS. By itself, it isn't anything particularly groundbreaking, but using the information it provides, you can get a feel for the quality of the code you have written.
