@@ -731,15 +731,9 @@ strong {
 .self-introduction {
   color: white;
   line-height: 1.5;
-  margin: 40px auto 0;
+  margin: 60px auto 0;
   max-width: 75%;
   text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  .self-introduction {
-    margin-top: 80px;
-  }
 }
 
 @media only screen and (max-width: 600px) and (orientation: landscape) {
