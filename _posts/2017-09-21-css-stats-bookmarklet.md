@@ -9,6 +9,6 @@ status: published
 ## Bookmarklet
 I made a nifty little bookmarklet that runs the current page through CSS Stats using the default user agent. To use it, drag <a href="javascript:location.href='http://cssstats.com/stats?url='+window.location.href+'&ua=Browser Default'" title="CSS Stats">`CSS Stats`</a> to your bookmarks bar or use the code snippet below to create the bookmark manually.
 
-```
+```javascript
 javascript:location.href='http://cssstats.com/stats?url='+window.location.href+'&ua=Browser Default'
 ```
