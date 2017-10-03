@@ -658,23 +658,33 @@ strong {
   overflow: hidden;
 }
 
-.container {
-  margin: 40px auto;
-  max-width: 750px;
-  padding: 0 20px;
-  width: 100%;
-}
-
-.container--home {
-  margin-top: 0;
-}
-
-// Home
-.header--home {
+.header {
   background-color: #306ffd;
   background-image: linear-gradient(60deg,#306efe,#003ab7);
   padding: 40px 0 120px;
   position: relative;
+}
+
+.header__copy {
+  color: #fff;
+  line-height: 1.5;
+  margin: 60px auto 0;
+  max-width: 75%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .header__copy {
+    font-size: 2em;
+  }
+}
+
+.header__bottom {
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .navigation {
@@ -703,13 +713,14 @@ strong {
 
 .navigation__link {
   background-color: #282a36;
-  color: white;
+  color: #fff;
   display: block;
+  letter-spacing: 3px;
   padding: 10px 15px;
 }
 
 .navigation__link:hover {
-  background-color: white;
+  background-color: #fff;
   color: #282a36;
   text-decoration: none;
 }
@@ -728,30 +739,50 @@ strong {
   }
 }
 
-.self-introduction {
-  color: white;
-  line-height: 1.5;
-  margin: 60px auto 0;
-  max-width: 75%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-  .self-introduction {
-    font-size: 2em;
-  }
-}
-
-.header__bottom {
-  bottom: 0;
-  height: auto;
-  left: 0;
-  position: absolute;
+.container {
+  margin: 40px auto;
+  max-width: 750px;
+  padding: 0 20px;
   width: 100%;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Home
 .list__item {
   margin-top: 20px;
+}
+
+// About
+.skill-list__heading {
+  background-color: #282a36;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 3px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.skill-list__subheading {
+  margin-top: 20px;
+}
+
+.skill-list {
+  padding-left: 20px;
 }
 
 // Post
