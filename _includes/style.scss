@@ -757,6 +757,15 @@ strong {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .column {
   padding-left: 20px;
   padding-right: 20px;
