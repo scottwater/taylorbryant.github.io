@@ -66,7 +66,7 @@ Add the following JavaScript snippet right before the `</body>` tag in your HTML
 ```
 
 ### Images
-Add `data-action="zoom"` to the `img` tags you want to apply the zoom effect to.
+Add `data-action="zoom"` to the images you want to apply the zoom effect to.
 
 ```html
 <img src="https://placebear.com/600/600.jpg" data-action="zoom">
