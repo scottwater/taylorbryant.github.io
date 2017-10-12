@@ -2,6 +2,7 @@
 title: An adventure in image zooming
 permalink: /an-adventure-in-image-zooming
 status: published
+description: Learn how to use Zoom.js.
 ---
 
 I recently decided to implement an image zooming feature on this blog. At first, I considered using Lightbox, a classic JavaScript library that overlays images on top of the current page. Before commiting to Lightbox, I decided to have a look around the web for alternatives. That's when I stumbled across [Zoom.js](https://github.com/fat/zoom.js/).
