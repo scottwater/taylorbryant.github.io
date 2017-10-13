@@ -43,7 +43,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  color: #282a36;
+  color: #000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 16px;
   line-height: 1.5;
@@ -136,7 +136,7 @@ strong {
   }
 }
 .navigation__link {
-  background-color: #282a36;
+  background-color: #000;
   color: #fff;
   display: block;
   letter-spacing: 3px;
@@ -144,7 +144,7 @@ strong {
 }
 .navigation__link:hover {
   background-color: #fff;
-  color: #282a36;
+  color: #000;
   text-decoration: none;
 }
 .navigation__item {
@@ -182,12 +182,8 @@ strong {
         flex-direction: column;
   }
 }
-.column {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .skill-list__heading {
-  background-color: #282a36;
+  background-color: #000;
   color: #fff;
   display: inline-block;
   letter-spacing: 3px;
