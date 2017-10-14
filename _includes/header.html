@@ -12,14 +12,6 @@
         <!-- Canonical URL -->
         <link rel="canonical" href="https://taylorbryant.blog{{ page.permalink }}">
         
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d54e5">
-        <meta name="theme-color" content="#ffffff">
-        
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="Taylor Bryant">
         <meta itemprop="description" content="Tips & tricks for front-end developers. Learn something new over your next cup of coffee!">
@@ -48,28 +40,12 @@
         <meta property="article:tag" content="front-end" />
         <meta property="article:tag" content="developer" />
         <meta property="article:tag" content="memphis" />
-
-        {% capture styles %}
-          {% include home.scss %}
-        {% endcapture %}
-        
-        <style>
-        {{ styles | scssify }}
-        </style>
-      {% when '/about' %}
+      {% when '/about.html' %}
         <title>Taylor Bryant | About</title>
         <meta name="description" content="My name is Taylor Bryant. I am a front-end developer based in Memphis, TN. I work at a local SEO/web design company called HigherVisibility." />
         
         <!-- Canonical URL -->
         <link rel="canonical" href="https://taylorbryant.blog{{ page.permalink }}">
-        
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d54e5">
-        <meta name="theme-color" content="#ffffff">
         
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="Taylor Bryant | About">
@@ -100,28 +76,12 @@
         <meta property="article:tag" content="developer" />
         <meta property="article:tag" content="memphis" />
         <meta property="article:tag" content="freelance" />
-    
-        {% capture styles %}
-          {% include about.scss %}
-        {% endcapture %}
-      
-        <style>
-        {{ styles | scssify }}
-        </style>
       {% else %}
         <title>Taylor Bryant | {{ page.title }}</title>
         <meta name="description" content="{{ page.description }}" />
         
         <!-- Canonical URL -->
         <link rel="canonical" href="https://taylorbryant.blog{{ page.permalink }}">
-        
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d54e5">
-        <meta name="theme-color" content="#ffffff">
         
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="{{ page.title }}">
@@ -149,15 +109,23 @@
         <meta property="article:tag" content="css" />
         <meta property="article:tag" content="stats" />
         <meta property="article:tag" content="bookmarklet" />
-    
-        {% capture styles %}
-          {% include style.scss %}
-        {% endcapture %}
-        
-        <style>
-        {{ styles | scssify }}
-        </style>
     {% endcase %}
+
+    {% capture styles %}
+      {% include style.scss %}
+    {% endcapture %}
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d54e5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <style>
+      {{ styles | scssify }}
+    </style>
   </head>
   <body>
     <div class="visible-area">

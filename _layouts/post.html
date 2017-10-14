@@ -3,6 +3,7 @@ layout: compress
 ---
 
 {% include header.html %}
+
 <div class="container">
   <header>
     <p class="post__date">{{ page.date | date_to_long_string }}</p>
@@ -10,6 +11,6 @@ layout: compress
     <p class="post__author"><em>by</em> <a href="{{  "/" | relative_url }}">Taylor Bryant</a></p>
   </header>
 
-  {{ content }}
+{{ content }}
 
 {% include footer-post.html %}
