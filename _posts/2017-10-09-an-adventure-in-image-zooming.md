@@ -1,9 +1,10 @@
 ---
+layout: post
 title: An adventure in image zooming
-permalink: /an-adventure-in-image-zooming
-status: published
+permalink: /an-adventure-in-image-zooming/
 description: Learn how to use Zoom.js.
 tags: [zoomjs, zoom, zoom.js, image, zooming, taylor, bryant, web, design, memphis]
+status: published
 ---
 
 I recently decided to implement an image zooming feature on this blog. At first, I considered using Lightbox, a classic JavaScript library that overlays images on top of the current page. Before commiting to Lightbox, I decided to have a look around the web for alternatives. That's when I stumbled across [Zoom.js](https://github.com/fat/zoom.js/).
@@ -13,7 +14,7 @@ Zoom.js is a jQuery plugin built by [@fat](https://github.com/fat), a developer 
 ## Example
 You can see Zoom.js in action below.
 
-![Zoom.js Example](assets/img/an-adventure-in-image-zooming/example.gif){: data-action="zoom" .img--border}
+![Zoom.js Example](/assets/img/an-adventure-in-image-zooming/example.gif){: data-action="zoom" .img--border}
 
 If you want to get *really* weird, you click on the GIF and try it out for yourself.
 

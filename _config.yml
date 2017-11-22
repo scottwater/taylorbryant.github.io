@@ -1,17 +1,6 @@
 title: Taylor Bryant - Front-end Developer
 description: A blog about web dev tools, productivity tips, and more.
 
-highlighter: rouge
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      status: "draft"
-      layout: "post"
-
 compress_html:
   clippings: all
   comments:  ["<!-- ", " -->"]
@@ -20,6 +9,12 @@ compress_html:
 sass:
   style: compressed
 
-url: "https://taylorbryant.blog"
-plugins_dir:
-  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+  - src
+  - tailwind.js

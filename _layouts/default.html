@@ -4,18 +4,55 @@ layout: compress
 
 {% include header.html %}
 
-<header class="header">
-  <ul class="navigation">
-      <li class="navigation__item"><a class="navigation__link" href="{{  "/" | relative_url }}">Blog</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="{{ "/about" | relative_url }}">About</a></li>
-      <li class="navigation__item"><a class="navigation__link" href="mailto:taylor@bryant.io">Contact</a></li>
-  </ul>
+<main>
+  <div class="max-w-xl mx-auto px-4 md:px-8 py-8 md:py-16 text-indigo-darker">
+    {{ content }}
+  </div>
+</main>
 
-  <h1 class="header__copy">{{ page.header-text }}</h1>
+<div class="bg-indigo-darker">
+  <div class="max-w-xl mx-auto px-4 md:px-8 py-8 md:py-16 text-center">
+    <h2 class="text-3xl md:text-4xl text-grey-lighter">Reading List</h2>
 
-  <svg width="100%" height="47px" viewBox="0 0 1440 47" version="1.1" xmlns="http://www.w3.org/2000/svg" class="header__bottom" preserveAspectRatio="none" data-reactid="14"><defs data-reactid="15"></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" data-reactid="16"><path d="M0,0.0577405639 C117.504588,18.44359 269.602477,22.1720696 456.293666,11.2431795 C562.076057,5.05068514 730.784198,0.911127653 885.297232,3.27366179 C1157.17617,7.43074321 1386.98062,21.3276838 1440,38.3891927 L1440,46.9388979 L0,46.9388979 L0,0.0577405639 Z" id="Path-9" fill="#fcfcfd" data-reactid="17"></path></g></svg>
-</header>
+    <p class="text-indigo-lightest mb-6 md:mx-auto md:w-2/3">Subscribe to my reading list. Get links to interesting articles, courses, and software projects related to front-end development in your inbox.</p>
 
-{{ content }}
+    <form class="mx-auto text-xl w-3/4 md:w-1/2" action="https://blog.us17.list-manage.com/subscribe/post?u=214a889e346f10ca74afca7c0&amp;id=302c579580" method="post">
+      <div class="mb-4 mx-auto">
+        <label class="sr-only" for="mce-EMAIL">
+          Email Address
+        </label>
+
+        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
+          id="mce-EMAIL" type="email" name="EMAIL" placeholder="Email address">
+      </div>
+
+      <div class="mb-4 mx-auto">
+        <label class="sr-only" for="mce-FNAME">
+          Fist Name
+        </label>
+      
+        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
+          id="mce-FNAME" type="text" name="FNAME" placeholder="First name">
+      </div>
+
+      <div class="mb-6 mx-auto">
+        <label class="sr-only" for="mce-LNAME">
+          Last Name
+        </label>
+      
+        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
+          id="mce-LNAME" type="text" name="LNAME" placeholder="Last name">
+      </div>
+
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_214a889e346f10ca74afca7c0_302c579580" tabindex="-1" value="">
+      </div>
+
+      <button class="bg-indigo-light hover:bg-indigo border-b-4 border-indigo hover:border-indigo-dark font-bold px-8 py-4 rounded text-indigo-lightest w-2/3" id="mc-embedded-subscribe" type="submit" name="subscribe">
+        Sign Up
+      </button>
+    </form>
+  </div>
+</div>
 
 {% include footer.html %}
