@@ -1,9 +1,6 @@
 .DS_Store
 .jekyll-metadata
 _site
-gulpfile.js
+Gemfile.lock
 node_modules
-package.json
 package-lock.json
-src
-tailwind.js

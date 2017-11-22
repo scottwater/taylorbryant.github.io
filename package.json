@@ -18,5 +18,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Taylor Bryant",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.6.9",
+    "immutable": "^3.8.2",
+    "once": "^1.4.0"
+  }
 }
