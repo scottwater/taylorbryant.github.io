@@ -88,13 +88,13 @@ var colors = {
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',*/
 
-  'teal-darkest': '#0d3331',
+  /*'teal-darkest': '#0d3331',
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
   'teal': '#4dc0b5',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
-  'teal-lightest': '#e8fffe',
+  'teal-lightest': '#e8fffe',*/
 
   /*'blue-darkest': '#05233b',
   'blue-darker': '#103d60',
