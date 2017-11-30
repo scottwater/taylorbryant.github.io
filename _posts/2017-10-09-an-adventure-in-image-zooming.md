@@ -7,6 +7,8 @@ tags: [zoomjs, zoom, zoom.js, image, zooming, taylor, bryant, web, design, memph
 status: published
 ---
 
+*Update: I ended up removing Zoom.js from my blog, because most of the posts I'm writing contain little to no images. With that said, I think it works great, and I highly recommend it. This blog just wasn't a great use case.*
+
 I recently decided to implement an image zooming feature on this blog. At first, I considered using Lightbox, a classic JavaScript library that overlays images on top of the current page. Before commiting to Lightbox, I decided to have a look around the web for alternatives. That's when I stumbled across [Zoom.js](https://github.com/fat/zoom.js/).
 
 Zoom.js is a jQuery plugin built by [@fat](https://github.com/fat), a developer known for his time working at Twitter, Medium, and Bootstrap.
@@ -15,8 +17,6 @@ Zoom.js is a jQuery plugin built by [@fat](https://github.com/fat), a developer 
 You can see Zoom.js in action below.
 
 ![Zoom.js Example](/assets/img/an-adventure-in-image-zooming/example.gif){: data-action="zoom" .img--border}
-
-If you want to get *really* weird, you click on the GIF and try it out for yourself.
 
 ## mehQuery
 I really liked Zoom.js after trying it out, but I wasn't too keen on its dependencies: jQuery and Transition, a jQuery plugin bundled with Bootstrap. Luckily, [@spinningarrow](https://github.com/spinningarrow) built [zoom-vanilla.js](https://github.com/spinningarrow/zoom-vanilla.js/), a fork of Zoom.js that uses vanilla JavaScript.
