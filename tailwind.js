@@ -86,17 +86,17 @@ var colors = {
   'green': '#38c172',
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
-  'green-lightest': '#e3fcec',*/
+  'green-lightest': '#e3fcec',
 
-  /*'teal-darkest': '#0d3331',
+  'teal-darkest': '#0d3331',
   'teal-darker': '#174e4b',
   'teal-dark': '#38a89d',
   'teal': '#4dc0b5',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
-  'teal-lightest': '#e8fffe',*/
+  'teal-lightest': '#e8fffe',
 
-  /*'blue-darkest': '#05233b',
+  'blue-darkest': '#05233b',
   'blue-darker': '#103d60',
   'blue-dark': '#2779bd',
   'blue': '#3490dc',
@@ -170,6 +170,8 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
+    /*'lg': '992px',
+    'xl': '1200px',*/
   },
 
 
@@ -193,6 +195,8 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Helvetica Neue',
+      'Helvetica',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
@@ -202,7 +206,6 @@ module.exports = {
       'Cantarell',
       'Fira Sans',
       'Droid Sans',
-      'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
@@ -766,17 +769,119 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
-  | Options                  https://tailwindcss.com/docs/configuration#options
+  | SVG fill                                   https://tailwindcss.com/docs/svg
   |-----------------------------------------------------------------------------
   |
-  | Here is where you can set your Tailwind configuration options. For more
-  | details about these options, visit the configuration options documentation.
+  | Here is where you define your SVG fill colors. By default we just provide
+  | `fill-current` which sets the fill to the current text color. This lets you
+  | specify a fill color using existing text color utilities and helps keep the
+  | generated CSS file size down.
+  |
+  | Class name: .fill-{name}
+  |
+  */
+
+  svgFill: {
+    'current': 'currentColor',
+  },
+
+
+  /*
+  |-----------------------------------------------------------------------------
+  | SVG stroke                                 https://tailwindcss.com/docs/svg
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you define your SVG stroke colors. By default we just provide
+  | `stroke-current` which sets the stroke to the current text color. This lets
+  | you specify a stroke color using existing text color utilities and helps
+  | keep the generated CSS file size down.
+  |
+  | Class name: .stroke-{name}
+  |
+  */
+
+  svgStroke: {
+    'current': 'currentColor',
+  },
+
+
+  /*
+  |-----------------------------------------------------------------------------
+  | Modules                  https://tailwindcss.com/docs/configuration#modules
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you control which modules are generated and what variants are
+  | generated for each of those modules.
+  |
+  | Currently supported variants: 'responsive', 'hover', 'focus'
+  |
+  | To disable a module completely, use `false` instead of an array.
+  |
+  */
+
+  modules: {
+    appearance: ['responsive'],
+    backgroundAttachment: ['responsive'],
+    backgroundColors: ['responsive', 'hover'],
+    backgroundPosition: ['responsive'],
+    backgroundRepeat: ['responsive'],
+    backgroundSize: ['responsive'],
+    borderColors: ['responsive', 'hover'],
+    borderRadius: ['responsive'],
+    borderStyle: ['responsive'],
+    borderWidths: ['responsive'],
+    cursor: ['responsive'],
+    display: ['responsive'],
+    flexbox: ['responsive'],
+    float: ['responsive'],
+    fonts: ['responsive'],
+    fontWeights: ['responsive', 'hover'],
+    height: ['responsive'],
+    leading: ['responsive'],
+    lists: ['responsive'],
+    margin: ['responsive'],
+    maxHeight: ['responsive'],
+    maxWidth: ['responsive'],
+    minHeight: ['responsive'],
+    minWidth: ['responsive'],
+    negativeMargin: ['responsive'],
+    opacity: ['responsive'],
+    overflow: ['responsive'],
+    padding: ['responsive'],
+    pointerEvents: ['responsive'],
+    position: ['responsive'],
+    resize: ['responsive'],
+    shadows: ['responsive'],
+    svgFill: [],
+    svgStroke: [],
+    textAlign: ['responsive'],
+    textColors: ['responsive', 'hover'],
+    textSizes: ['responsive'],
+    textStyle: ['responsive', 'hover'],
+    tracking: ['responsive'],
+    userSelect: ['responsive'],
+    verticalAlign: ['responsive'],
+    visibility: ['responsive'],
+    whitespace: ['responsive'],
+    width: ['responsive'],
+    zIndex: ['responsive'],
+  },
+
+
+  /*
+  |-----------------------------------------------------------------------------
+  | Advanced Options         https://tailwindcss.com/docs/configuration#options
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you can tweak advanced configuration options. We recommend
+  | leaving these options alone unless you absolutely need to change them.
   |
   */
 
   options: {
     prefix: '',
     important: false,
+    separator: ':',
   },
 
 }
