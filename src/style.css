@@ -35,14 +35,6 @@
   border: 0;
 }
 
-*:first-child {
-  @apply mt-0;
-}
-
-*:last-child {
-  @apply mb-0;
-}
-
 html {
   font-size: 16px;
 }
@@ -98,7 +90,15 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply .font-black .leading-tight .mt-8 .mb-2;
+  @apply .font-black .leading-tight;
+}
+
+h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
+  @apply .mt-8;
+}
+
+h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child) {
+  @apply .mb-2;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -106,7 +106,11 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 }
 
 main p, main ul, main ol {
-  @apply .leading-loose .mb-4 .text-indigo-darker;
+  @apply .leading-loose .text-indigo-darker;
+}
+
+main p:not(:last-child), main ul:not(:last-child), main ol:not(:last-child) {
+  @apply .mb-4;
 }
 
 main li {
@@ -118,7 +122,12 @@ main a {
 }
 
 main pre {
-  @apply .bg-indigo-lightest .break-normal .font-mono .overflow-auto .p-4 .text-indigo-darkest .whitespace-pre;
+  @apply .bg-indigo-lightest .break-normal .font-mono .mb-4 .overflow-auto .p-4 .text-indigo-darkest .whitespace-pre;
+}
+
+main :not(pre) > code {
+  @apply .bg-indigo-lightest;
+  padding: 4px 8px;
 }
 
 main img {
