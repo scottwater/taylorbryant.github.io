@@ -36,4 +36,4 @@ By combining the `:not` selector with `:first-child` and `:last-child`, I was ab
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Takeaway
-If you ever find yourself writing more CSS just to undo previous rules, it’s probably worth giving :not a shot. After my *margin epiphany*, I see myself applying this same concept to other aspects of my CSS every day.
+If you ever find yourself writing more CSS just to undo previous rules, it’s probably worth giving `:not` a shot. After my *margin epiphany*, I see myself applying this same concept to other aspects of my CSS every day.
