@@ -11,7 +11,7 @@ Throughout my attempted mastery of CSS, one of my biggest pain points has been d
 ## Bottom margin only
 First, I tried limiting myself to only using `margin-bottom`.
 
-<p data-height="800" data-theme-id="32204" data-slug-hash="ppdOZN" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #1 - Bottom margin only" class="codepen">See the Pen <a href="https://codepen.io/taylorbryant/pen/ppdOZN/">Example #1 - Bottom margin only</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="800" data-theme-id="32204" data-slug-hash="ppdOZN" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #1 - Bottom margin only" class="codepen mt-2 mb-4">See the Pen <a href="https://codepen.io/taylorbryant/pen/ppdOZN/">Example #1 - Bottom margin only</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 While this doesn't look awful, it introduces a couple of issues:
@@ -20,7 +20,7 @@ While this doesn't look awful, it introduces a couple of issues:
 
 ## :first-child & :last-child selectors
 
-<p data-height="800" data-theme-id="32204" data-slug-hash="YYEeMW" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #2 - :first-child & :last-child selectors" class="codepen">See the Pen <a href="https://codepen.io/taylorbryant/pen/YYEeMW/">Example #2 - :first-child & :last-child selectors</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="800" data-theme-id="32204" data-slug-hash="YYEeMW" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #2 - :first-child & :last-child selectors" class="codepen mt-2 mb-4">See the Pen <a href="https://codepen.io/taylorbryant/pen/YYEeMW/">Example #2 - :first-child & :last-child selectors</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Okay, so this solves the issues introduced with the last approach. However, I can't help but get code smells, because:
@@ -30,5 +30,5 @@ Okay, so this solves the issues introduced with the last approach. However, I ca
 Is there a better way to approach this? Yes!
 
 ## :not(:first-child) & :not(:last-child) selectors
-<p data-height="800" data-theme-id="32204" data-slug-hash="dJZqjg" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #3 - :not(:first-child) & :not(:last-child)" class="codepen">See the Pen <a href="https://codepen.io/taylorbryant/pen/dJZqjg/">Example #3 - :not(:first-child) & :not(:last-child)</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="800" data-theme-id="32204" data-slug-hash="dJZqjg" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #3 - :not(:first-child) & :not(:last-child)" class="codepen mt-2 mb-4">See the Pen <a href="https://codepen.io/taylorbryant/pen/dJZqjg/">Example #3 - :not(:first-child) & :not(:last-child)</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
