@@ -29,7 +29,7 @@ This solves the issues introduced with the last approach. However, I can't help 
 2. `margin-bottom` is declared twice on the paragraph element
 
 ## :not(:first-child) & :not(:last-child) selectors
-By combining the `:not` selector with `:first-child` and `:last-child` I was able to get rid of the excess code and land on my favorite approach yet.
+By combining the `:not` selector with `:first-child` and `:last-child`, I was able to get rid of the excess code and land on my favorite approach yet.
 
 <p data-height="800" data-theme-id="32204" data-slug-hash="dJZqjg" data-default-tab="css,result" data-user="taylorbryant" data-embed-version="2" data-pen-title="Example #3 - :not(:first-child) & :not(:last-child)" class="codepen">See the Pen <a href="https://codepen.io/taylorbryant/pen/dJZqjg/">Example #3 - :not(:first-child) & :not(:last-child)</a> by Taylor Bryant (<a href="https://codepen.io/taylorbryant">@taylorbryant</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
