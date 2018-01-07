@@ -2,7 +2,7 @@
 layout: post
 title:  "Solving my margin headache"
 permalink: /solving-my-margin-headache/
-description: Throughout my attempted mastery of CSS, one of my most significant pain points has been dealing with margin between text elements (e.g., p, h1, h2, etc.).
+description: Throughout my attempted mastery of CSS, one of my most significant pain points has been dealing with margin between text elements (p, h1, h2, etc.).
 tags: [first-child,last-child,selector,margin,taylor,bryant,web,design,memphis]
 status: published
 ---
