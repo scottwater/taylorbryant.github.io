@@ -32,6 +32,6 @@ Now, let's put this file to use:
 * Press `⌘` + `s` to save the changes to the file
 
 
-## Use cssComb
+## Use CSScomb
 
 ## Smile
