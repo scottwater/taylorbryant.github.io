@@ -2,12 +2,12 @@
 layout: post
 title:  "Solving my margin headache"
 permalink: /solving-my-margin-headache/
-description: Throughout my attempted mastery of CSS, one of my most significant pain points has been dealing with margin between text elements (p, h1, h2, etc.).
+description: An approach to dealing with margin between text elements in CSS.
 tags: [first-child,last-child,selector,margin,taylor,bryant,web,design,memphis]
 status: published
 ---
 
-Throughout my attempted mastery of CSS, one of my most significant pain points has been dealing with margin between text elements (e.g., p, h1, h2, etc.).
+Throughout my attempted mastery of CSS, one of my most significant pain points has been dealing with margin between text elements. In this post, I will go over some of my previous approaches and the one approach I eventually landed on.
 
 ## Bottom margin only
 First, I tried limiting myself to only using `margin-bottom`.
