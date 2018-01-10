@@ -16,7 +16,7 @@ Zoom.js is a jQuery plugin built by [@fat](https://github.com/fat), a developer 
 ## Example
 You can see Zoom.js in action below.
 
-![Zoom.js Example](/assets/img/an-adventure-in-image-zooming/example.gif){: data-action="zoom" .img--border}
+![Zoom.js Example](/assets/img/an-adventure-in-image-zooming/example.gif)
 
 ## mehQuery
 I really liked Zoom.js after trying it out, but I wasn't too keen on its dependencies: jQuery and Transition, a jQuery plugin bundled with Bootstrap. Luckily, [@spinningarrow](https://github.com/spinningarrow) built [zoom-vanilla.js](https://github.com/spinningarrow/zoom-vanilla.js/), a fork of Zoom.js that uses vanilla JavaScript.
