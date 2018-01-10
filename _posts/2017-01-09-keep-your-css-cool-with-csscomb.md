@@ -36,3 +36,5 @@ Now, let's put this file to use:
 Open the command palette by navigating to **View** > **Command Palette...** or press `Shift` + `⌘` + `P`. In the command palette window, type `format` and click **CSSComb: Format Styles**.
 
 ![How to Use CSScomb](/assets/img/keep-your-css-cool-with-csscomb/use-csscomb.gif)
+
+There you have it! If you anything is unclear or you just want to say hey, shoot me a message on Twitter ([@tayl_rbryant](https://twitter.com/tayl_rbryant)).
