@@ -29,9 +29,10 @@ Now, let's put this file to use:
 * Go to **Code** > **Preferences** > **Settings** or press `⌘` + `,` to open the settings window
 * Paste the following key-value pair in **User Settings**: `"csscomb.preset": "~/.vscode/your-config.csscomb.json",`
 * Replace `your-config.csscomb.json` with your own config's filename
-* Press `⌘` + `s` to save the changes to the file
+* Press `⌘` + `S` to save the changes to the file
 
 
 ## Use CSScomb
+Open the command palette by navigating to **View** > **Command Palette...** or press `Shift` + `⌘` + `P`. In the command palette window, type `format` and click **CSSComb: Format Styles**.
 
-## Smile
+![How to Use CSScomb](/assets/img/keep-your-css-cool-with-csscomb/use-csscomb.gif)
