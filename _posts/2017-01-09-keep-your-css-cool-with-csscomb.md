@@ -6,9 +6,9 @@ description: How to use CSScomb to keep your CSS clean and consistent.
 tags: [csscomb,css,formatter,visual,studio,code,taylor,bryant,web,design,memphis]
 ---
 
-For the past year, I have been using an extension called [CSScomb](http://csscomb.com/) to keep my CSS clean and consistent.
+For the past year, I have been using an extension called [CSScomb](http://csscomb.com/) to keep my CSS clean and consistent based on my own taste.
 
-CSScomb is a formatter for CSS that can be installed as an extension on most popular text editors, including [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), and [VS Code](https://code.visualstudio.com/). In this post, I will go over how to install and set up CSScomb.
+CSScomb is a formatter for CSS that can be installed as an extension on most popular text editors, including [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), and [VS Code](https://code.visualstudio.com/). It allows you to stop worrying about how your CSS looks and focus on the code. In this post, I will go over how to install and set up CSScomb.
 
 *Note: I use VS Code on macOS. However, these same principles apply to other text editors.*
 
