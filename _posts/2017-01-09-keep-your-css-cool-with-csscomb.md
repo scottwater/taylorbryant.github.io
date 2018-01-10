@@ -4,6 +4,7 @@ title:  "Keep your CSS cool with CSScomb"
 permalink: /keep-your-css-cool-with-csscomb/
 description: How to use CSScomb to keep your CSS clean and consistent.
 tags: [csscomb,css,formatter,visual,studio,code,taylor,bryant,web,design,memphis]
+status: published
 ---
 
 For the past year, I have been using an extension called [CSScomb](http://csscomb.com/) to keep my CSS clean and consistent based on my own taste.
