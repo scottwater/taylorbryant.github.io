@@ -78,6 +78,7 @@ gulp.task("serve", ["jekyll-build"], () => {
       "**/*.yml",
       "!_site/**/*"
     ],
+    { interval: 1000 },
     ["jekyll-build"]
   );
 });
