@@ -47,13 +47,7 @@ var colors = {
   'transparent': 'transparent',
 
   'black': '#222b2f',
-  'grey-darkest': '#364349',
-  'grey-darker': '#596a73',
-  'grey-dark': '#70818a',
-  'grey': '#9babb4',
-  'grey-light': '#dae4e9',
   'grey-lighter': '#f3f7f9',
-  'grey-lightest': '#fafcfc',
   'white': '#ffffff',
 
   /*'red-darkest': '#420806',
@@ -276,9 +270,6 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
-    'light': 300,
     'normal': 400,
     'medium': 500,
     'semibold': 600,
