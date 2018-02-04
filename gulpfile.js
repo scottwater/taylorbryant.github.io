@@ -2,15 +2,43 @@ const gulp = require("gulp");
 const gutil = require("gulp-util");
 const child = require("child_process");
 const browserSync = require("browser-sync").create();
-
 const siteRoot = "_site";
 const mainCSS = "src/style.css"; /* Main stylesheet (pre-build) */
 const tailwindConfig = "tailwind.js"; /* Tailwind config */
 
 /**
+ * Compile CSS
+ */
+gulp.task("css", function() {
+  const atimport = require("postcss-import");
+  const postcss = require("gulp-postcss");
+  const tailwindcss = require("tailwindcss");
+  const autoprefixer = require("gulp-autoprefixer");
+  const cleancss = require("gulp-clean-css");
+
+  browserSync.notify("Compiling CSS...");
+
+  return gulp
+    .src(mainCSS)
+    .pipe(postcss([atimport(), tailwindcss(tailwindConfig)]))
+    .pipe(autoprefixer({ browsers: ["last 2 versions"], cascade: false }))
+    .pipe(cleancss())
+    .pipe(gulp.dest("_includes/"));
+});
+
+/**
  * Fix Windows compatibility issue
  */
 const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+
+/**
+ * Build Jekyll site
+ */
+gulp.task("jekyll-build", ["css"], function() {
+  browserSync.notify("Building Jekyll site...");
+
+  return child.spawn(jekyll, ["build"], { stdio: "inherit" });
+});
 
 /**
  * Custom PurgeCSS Extractor
@@ -23,27 +51,15 @@ class TailwindExtractor {
 }
 
 /**
- * Build Jekyll Site
+ * Run PurgeCSS
  */
-gulp.task("jekyll-build", ["css"], function() {
-  browserSync.notify("Running: $ jekyll build");
-  return child.spawn(jekyll, ["build"], { stdio: "inherit" });
-});
-
-/**
- * Compile styles
- */
-gulp.task("css", function() {
-  const atimport = require("postcss-import");
-  const postcss = require("gulp-postcss");
-  const tailwindcss = require("tailwindcss");
+gulp.task("purge", ["jekyll-build"], function() {
   const purgecss = require("gulp-purgecss");
-  const autoprefixer = require("gulp-autoprefixer");
-  const cleancss = require("gulp-clean-css");
+
+  browserSync.notify("Purging CSS...");
 
   return gulp
-    .src(mainCSS)
-    .pipe(postcss([atimport(), tailwindcss(tailwindConfig)]))
+    .src("_includes/style.css")
     .pipe(
       purgecss({
         content: ["_site/**/*.html"],
@@ -55,22 +71,27 @@ gulp.task("css", function() {
         ]
       })
     )
-    .pipe(autoprefixer({ browsers: ["last 2 versions"], cascade: false }))
-    .pipe(cleancss())
-    .pipe(gulp.dest("_includes/"));
+    .pipe(gulp.dest("_includes/"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("js-watch", ["purge"], function(done) {
+  browserSync.notify("Reloading browser...");
+  browserSync.reload();
+  done();
 });
 
 /**
  * Serve site with BrowserSync
  */
-gulp.task("serve", ["jekyll-build"], () => {
+gulp.task("serve", ["purge"], () => {
   browserSync.init({
-    files: [siteRoot + "/**"],
     port: 4000,
     open: "local",
     server: {
       baseDir: siteRoot
-    }
+    },
+    files: [siteRoot + "/**"]
   });
 
   gulp.watch(
@@ -80,10 +101,11 @@ gulp.task("serve", ["jekyll-build"], () => {
       "**/*.html",
       "**/*.md",
       "**/*.yml",
-      "!_site/**/*"
+      "!_site/**/*",
+      "!node_modules"
     ],
-    { interval: 1000 },
-    ["jekyll-build"]
+    { interval: 3000 },
+    ["js-watch"]
   );
 });
 
