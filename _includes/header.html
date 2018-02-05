@@ -17,7 +17,7 @@
 
   <!-- SEO -->
   <meta name="description" content="{{ page.description }}">
-  <meta name="keywords" content="Taylor,Bryant,Memphis,Tennessee,Web,Developer,Front-end,Frontend">
+  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>{% endif %}
   <meta name="author" content="Taylor Bryant">
   
   <!-- Twitter Card -->
