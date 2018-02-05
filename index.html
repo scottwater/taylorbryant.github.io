@@ -18,11 +18,11 @@ tags: [taylor,bryant,web,design,memphis,front-end,development,freelance,tennesse
 <h2 class="mt-0 text-3xl md:text-4xl text-center">Quick Reads</h2>
 
 <ul class="leading-normal list-reset text-xl md:text-2xl text-center">
-  {% for post in site.posts %} {% if post.status == 'published' %}
-  <li>
-    <a class="text-indigo-dark no-underline hover:underline" href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endif %} {% endfor %}
+  {% for post in site.posts %}
+    <li>
+      <a class="text-indigo-dark no-underline hover:underline" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
 </ul>
 
 <div class="mt-12 text-center">
