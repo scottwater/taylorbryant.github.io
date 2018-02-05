@@ -18,9 +18,9 @@ layout: compress
 
     <ul class="list-reset text-xl md:text-2xl">
       {% for post in site.posts %}
-        {% if post.status == 'published' %}
-        <li class="mt-2"><a class="text-indigo-lightest no-underline hover:underline" href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
+        <li class="mt-2">
+          <a class="text-indigo-lightest no-underline hover:underline" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
       {% endfor %}
     </ul>
   </div>
