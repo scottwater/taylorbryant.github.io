@@ -1,13 +1,12 @@
----
+--- 
 layout: compress
 ---
 
 {% include header.html %}
+
 <div class="bg-indigo-lightest">
   <div class="max-w-md mx-auto px-4 md:px-8 py-8 md:py-16 text-center">
     <svg class="mb-4" width="240px" height="263px" viewBox="0 0 240 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-      <desc>Created with Sketch.</desc>
       <defs>
         <circle id="path-1" cx="120" cy="120" r="120"></circle>
         <path d="M12,160 C12,226.27417 65.72583,280 132,280 C198.27417,280 252,226.27417 252,160 L264,160 L264,-1.42108547e-14 L-3.19744231e-14,-1.42108547e-14 L-3.19744231e-14,160 L12,160 Z"
@@ -123,49 +122,45 @@ layout: compress
 </div>
 
 <main class="max-w-xl mx-auto px-4 md:px-8 py-8 md:py-16 text-indigo-darker">
-    {{ content }}
+  {{ content }}
 </main>
 
 <div class="bg-indigo-darker">
   <div class="max-w-xl mx-auto px-4 md:px-8 py-8 md:py-16 text-center">
-    <h2 class="text-3xl md:text-4xl text-grey-lighter">Reading List</h2>
+    <h2 class="text-3xl md:text-4xl text-grey-lighter">Contact</h2>
 
-    <p class="mb-6 md:mx-auto md:w-2/3 text-indigo-lightest">Subscribe to my reading list. Get links to interesting articles, courses, and software projects related to front-end development in your inbox.</p>
+    <p class="mb-6 md:mx-auto md:w-2/3 text-indigo-lightest">Have a question or just want to say hello?</p>
 
-    <form class="mx-auto text-xl md:w-2/3" action="https://blog.us17.list-manage.com/subscribe/post?u=214a889e346f10ca74afca7c0&amp;id=302c579580" method="post">
+    <form class="mx-auto text-xl md:w-2/3" name="contact" netlify>
       <div class="mb-4 mx-auto">
-        <label class="sr-only" for="mce-EMAIL">
+        <label class="sr-only" for="email">
           Email Address
         </label>
 
-        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
-          id="mce-EMAIL" type="email" name="EMAIL" placeholder="Email address">
+        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light p-4 rounded text-indigo-darker w-full"
+          id="email" type="email" name="email" placeholder="Your email">
       </div>
 
       <div class="mb-4 mx-auto">
-        <label class="sr-only" for="mce-FNAME">
-          Fist Name
+        <label class="sr-only" for="name">
+          Name
         </label>
-      
-        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
-          id="mce-FNAME" type="text" name="FNAME" placeholder="First name">
+
+        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light p-4 rounded text-indigo-darker w-full"
+          id="name" type="text" name="name" placeholder="Your name">
       </div>
 
       <div class="mb-6 mx-auto">
-        <label class="sr-only" for="mce-LNAME">
-          Last Name
+        <label class="sr-only" for="message">
+          Message
         </label>
-      
-        <input class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light px-8 py-4 rounded text-indigo-darker w-full"
-          id="mce-LNAME" type="text" name="LNAME" placeholder="Last name">
+
+        <textarea class="appearance-none bg-grey-lighter border-2 border-transparent hover:border-indigo-light p-4 rounded text-indigo-darker w-full" id="message" name="message" placeholder="Say something..." rows="6"></textarea>
       </div>
 
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_214a889e346f10ca74afca7c0_302c579580" tabindex="-1" value="">
-      </div>
-
-      <button class="bg-indigo-light hover:bg-indigo border-b-4 border-indigo hover:border-indigo-dark font-bold px-8 py-4 rounded text-indigo-lightest w-full md:w-1/2" id="mc-embedded-subscribe" type="submit" name="subscribe">
-        Sign Up
+      <button class="bg-indigo-light hover:bg-indigo border-b-4 border-indigo hover:border-indigo-dark font-bold p-4 rounded text-indigo-lightest w-full md:w-1/2"
+        type="submit">
+        Submit
       </button>
     </form>
   </div>
