@@ -3,8 +3,7 @@ layout: post
 title:  "Consider using system fonts"
 permalink: /consider-using-system-fonts/
 description: Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts.
-tags: [default,system,fonts,medium,taylor,bryant,web,design,memphis]
-status: published
+tags: [default,system,fonts,medium,taylor,bryant,web,design,memphis,front-end,developer]
 ---
 
 Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts. Defaulting to system fonts provides a performance boost and provides a comfortable, consistent experience for the end user. Loading a system font instead of a web font will save you at least one HTTP request and the headache of finding a nice looking font for your project. Try it out!

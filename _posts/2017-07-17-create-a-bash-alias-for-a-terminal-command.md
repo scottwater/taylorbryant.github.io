@@ -3,8 +3,7 @@ layout: post
 title: Create a Bash alias for a Terminal command
 permalink: /create-a-bash-alias-for-a-terminal-command/
 description: Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create a Bash alias.
-tags: [bash,alias,terminal,command,taylor,bryant,web,design,memphis]
-status: published
+tags: [bash,alias,terminal,command,taylor,bryant,web,design,memphis,front-end,developer]
 ---
 
 Do you find yourself frequently typing out the same command in Terminal? One simple way to make your workflow more efficient is to create a Bash alias.

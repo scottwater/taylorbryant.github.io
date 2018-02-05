@@ -4,7 +4,6 @@ title: An adventure in image zooming
 permalink: /an-adventure-in-image-zooming/
 description: Learn how to use Zoom.js.
 tags: [zoomjs, zoom, zoom.js, image, zooming, taylor, bryant, web, design, memphis]
-status: published
 ---
 
 *Update: I ended up removing Zoom.js from my blog, because most of the posts I'm writing contain little to no images. With that said, I think it works great, and I highly recommend it. This blog just wasn't a great use case.*
