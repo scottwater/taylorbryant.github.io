@@ -72,13 +72,6 @@ gulp.task("purge", ["jekyll-build"], function() {
       })
     )
     .pipe(gulp.dest("_includes/"))
-    .pipe(browserSync.stream());
-});
-
-gulp.task("js-watch", ["purge"], function(done) {
-  browserSync.notify("Reloading browser...");
-  browserSync.reload();
-  done();
 });
 
 /**
@@ -86,10 +79,10 @@ gulp.task("js-watch", ["purge"], function(done) {
  */
 gulp.task("serve", ["purge"], () => {
   browserSync.init({
-    port: 4000,
+    port: 4100,
     open: "local",
     server: {
-      baseDir: siteRoot
+      baseDir: siteRoot + "/"
     },
     files: [siteRoot + "/**"]
   });
@@ -104,8 +97,8 @@ gulp.task("serve", ["purge"], () => {
       "!_site/**/*",
       "!node_modules"
     ],
-    { interval: 3000 },
-    ["js-watch"]
+    { interval: 2000 },
+    ["purge"]
   );
 });
 
