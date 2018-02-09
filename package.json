@@ -10,7 +10,6 @@
     "gulp-clean-css": "^3.9.2",
     "gulp-postcss": "^7.0.1",
     "gulp-purgecss": "^0.18.0",
-    "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.8",
     "postcss-import": "^11.0.0",
     "tailwindcss": "^0.4.1"
