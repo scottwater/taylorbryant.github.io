@@ -14,9 +14,6 @@
     "postcss-import": "^11.0.0",
     "tailwindcss": "^0.4.1"
   },
-  "scripts": {
-    "build": "npm install && gulp build"
-  },
   "author": "Taylor Bryant",
   "license": "ISC"
 }
