@@ -103,3 +103,4 @@ gulp.task("serve", ["purge"], () => {
 });
 
 gulp.task("default", ["serve"]);
+gulp.task("build", ["purge"]);
