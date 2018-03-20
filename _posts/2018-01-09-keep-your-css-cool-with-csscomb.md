@@ -16,7 +16,7 @@ tags:
   - design
   - memphis
 ---
-*Update: I have since stopped using CSScomb. While CSScomb is an awesome tool, I found that [Prettier](https://prettier.io/) works better for my needs. The benefit of using Prettier is that it works with multiple formats (JavaScript, HTML, CSS, Markdown, and more). *
+*Update: I have since stopped using CSScomb. While CSScomb is an awesome tool, I found that [Prettier](https://prettier.io/) works better for my needs. The benefit of using Prettier is that it works with multiple formats (JavaScript, HTML, CSS, Markdown, and more).*
 
 For the past year, I have been using an extension called [CSScomb](http://csscomb.com/) to keep my CSS clean and consistent based on my own taste.
 
