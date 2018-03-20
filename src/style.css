@@ -31,7 +31,7 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   border: 0;
 }
 
@@ -89,27 +89,51 @@ h6 {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply .font-black .leading-tight;
 }
 
-h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
   @apply .mt-8;
 }
 
-h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child) {
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child),
+h4:not(:last-child),
+h5:not(:last-child),
+h6:not(:last-child) {
   @apply .mb-2;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   @apply .text-indigo-darkest;
 }
 
-main p, main ul, main ol {
+main p,
+main ul,
+main ol {
   @apply .leading-loose .text-indigo-darker;
 }
 
-main p:not(:last-child), main ul:not(:last-child), main ol:not(:last-child) {
+main p:not(:last-child),
+main ul:not(:last-child),
+main ol:not(:last-child) {
   @apply .mb-4;
 }
 
@@ -137,6 +161,31 @@ main img {
 .cp_embed_wrapper {
   @apply .mt-2 .mb-4;
 }
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
