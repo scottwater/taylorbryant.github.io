@@ -1,19 +1,41 @@
 {
-  "name": "taylorbryant-blog",
-  "version": "2.0.0",
-  "description": "taylorbryant.blog",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-clean-css": "^3.9.3",
-    "gulp-postcss": "^7.0.1",
-    "gulp-purgecss": "^0.18.0",
-    "gulp-util": "^3.0.8",
-    "postcss-import": "^11.1.0",
-    "tailwindcss": "^0.5.1"
+  "name": "taylorbryant.blog",
+  "description": "A blog about front-end development by Taylor Bryant",
+  "version": "3.0.0",
+  "author": "Taylor Bryant <taylor@bryant.io>",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/react-fontawesome": "0.0.18",
+    "gatsby": "^1.9.241",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-catch-links": "^1.0.19",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-remark": "^1.7.39",
+    "react-helmet": "^5.2.0"
   },
-  "author": "Taylor Bryant",
-  "license": "ISC"
+  "keywords": [
+    "taylor",
+    "bryant",
+    "front-end",
+    "developer",
+    "html",
+    "css",
+    "javascript",
+    "gatsby",
+    "react"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build":
+      "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && purgecss -c purgecss.config.js -o ./src/layouts && gatsby build",
+    "develop":
+      "tailwind build ./src/layouts/index.tailwind.css -c ./tailwind.js -o ./src/layouts/index.css && gatsby develop",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1",
+    "purgecss": "^0.21.0",
+    "tailwindcss": "^0.5.1"
+  }
 }
