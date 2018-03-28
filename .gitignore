@@ -1,6 +1,10 @@
-.DS_Store
-.jekyll-metadata
-_site
-Gemfile.lock
+# Project dependencies
+.cache
 node_modules
-package-lock.json
+yarn-error.log
+
+# Build directory
+/public
+
+# macOS
+.DS_Store
