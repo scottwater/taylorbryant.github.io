@@ -12,13 +12,12 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-indigo-darker">
-      <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-4 md:p-8">
-        <Link to="/" className="flex items-center no-underline text-white">
-          <img src={avatar} className="h-12 mr-4 w-12" />  
+    <div className="border-b">
+      <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-8">
+        <Link to="/" className="flex items-center no-underline text-black font-mono"> 
 
           <span className="font-bold text-xl">
-            Taylor Bryant
+            tb
           </span>
         </Link>
 
@@ -43,28 +42,28 @@ const Header = () => {
           <div className="text-sm">
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
+              className="bg-teal block font-bold mt-4 md:inline-block md:mt-0 mr-6 px-4 py-2 no-underline text-white uppercase"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="bg-blue block font-bold md:inline-block mt-4 md:mt-0 mr-6 px-4 py-2 no-underline text-white uppercase"
             >
               About
             </Link>
 
             <Link
               to="/contact"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
+              className="bg-orange block font-bold md:inline-block mt-4 md:mt-0 px-4 py-2 no-underline text-white uppercase"
             >
               Contact
             </Link>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

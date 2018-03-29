@@ -7,9 +7,10 @@ import "./index.css";
 
 /* Layout */
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="flex flex-col min-h-screen">
     <Helmet
       title="Taylor Bryant - Front-end Developer"
       meta={[
@@ -17,8 +18,14 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
     />
+
     <Header />
-    <div>{children()}</div>
+
+    <div className="flex flex-1 mx-auto px-8 py-16 text-grey-darkest">
+      {children()}
+    </div>
+
+    <Footer />
   </div>
 );
 
