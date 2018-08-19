@@ -12,9 +12,9 @@ exclude:
   - LICENSE.md
   - Gemfile
   - Gemfile.lock
-  - gulpfile.js
+  - gulpfile.babel.js
   - node_modules
   - package.json
   - package-lock.json
   - src
-  - tailwind.js
+  - tailwind.config.js

@@ -16,10 +16,11 @@
   <meta name="theme-color" content="#e6e8ff">
 
   <!-- SEO -->
-  <meta name="description" content="{{ page.description }}">
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>{% endif %}
+  <meta name="description" content="{{ page.description }}"> {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"
+  />{% endif %}
   <meta name="author" content="Taylor Bryant">
-  
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@tayl_rbryant">
@@ -28,17 +29,15 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="https://taylorbryant.blog/android-chrome-512x512.png">
-  
+
   <!-- Schema.org -->
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.description }}">
   <meta itemprop="image" content="https://taylorbryant.blog/android-chrome-512x512.png">
-  
+
   <!-- Styles -->
-  <style>
-    {% include style.css %}
-  </style>
-  
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
   <!-- Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
