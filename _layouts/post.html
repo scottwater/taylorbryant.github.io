@@ -4,26 +4,12 @@ layout: compress
 
 {% include header.html %}
 
-<main class="max-w-md mx-auto px-4 md:px-8 py-8 md:py-16 text-indigo-darker">
-  <div class="font-mono mb-2 text-indigo-light tracking-wide uppercase">{{ page.date | date: "%B %-d, %Y" }}</div>
+<main class="max-w-md mx-auto p-4 md:p-8">
+  <div class="font-mono mb-2 tracking-wide uppercase">{{ page.date | date: "%B %-d, %Y" }}</div>
 
   <h1 class="mb-8 mt-0">{{ page.title }}</h1>
 
   {{ content }}
 </main>
-
-<div class="bg-indigo-darker">
-  <div class="max-w-xl mx-auto px-4 md:px-8 py-8 md:py-16 text-center">
-    <h2 class="text-3xl md:text-4xl text-grey-lighter">Other Posts</h2>
-
-    <ul class="list-reset text-xl md:text-2xl">
-      {% for post in site.posts %}
-        <li class="mt-2">
-          <a class="text-indigo-lightest no-underline hover:underline" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
 
 {% include footer.html %}
