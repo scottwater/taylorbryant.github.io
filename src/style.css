@@ -158,9 +158,11 @@ main img {
   @apply .border-4 .border-indigo .border-solid;
 }
 
+/* purgecss start ignore */
 .cp_embed_wrapper {
-  @apply .mt-2 .mb-4;
+  @apply .my-8;
 }
+/* purgecss end ignore */
 
 /**
  * This injects any component classes registered by plugins.
