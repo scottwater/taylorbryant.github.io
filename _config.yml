@@ -3,18 +3,17 @@ description: A blog about web dev tools, productivity tips, and more.
 
 compress_html:
   clippings: all
-  comments:  ["<!-- ", " -->"]
-  endings:   all
+  comments: ["<!-- ", " -->"]
+  endings: all
 
 exclude:
-  - .gitignore
-  - README.md
-  - LICENSE.md
   - Gemfile
   - Gemfile.lock
   - gulpfile.babel.js
+  - LICENSE.md
   - node_modules
   - package.json
   - package-lock.json
+  - README.md
   - src
   - tailwind.config.js
