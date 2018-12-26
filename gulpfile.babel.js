@@ -84,6 +84,9 @@ task("startServer", () => {
       "**/*.html",
       "**/*.md",
       "**/*.yml",
+      "**/*.jpg",
+      "**/*.png",
+      "**/*.gif",
       "!_site/**/*",
       "!node_modules"
     ],
