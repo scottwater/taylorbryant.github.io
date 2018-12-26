@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Consider using system fonts"
-permalink: /consider-using-system-fonts/
-description: Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts.
+permalink: "/consider-using-system-fonts/"
+description: "Next time you find yourself reaching for Google Fonts or Typekit, stop for a moment, and consider using system fonts."
 tags: [default,system,fonts,medium,taylor,bryant,web,design,memphis,front-end,developer]
 ---
 
