@@ -6,6 +6,9 @@ compress_html:
   comments: ["<!-- ", " -->"]
   endings: all
 
+include:
+  - _redirects
+
 exclude:
   - Gemfile
   - Gemfile.lock
